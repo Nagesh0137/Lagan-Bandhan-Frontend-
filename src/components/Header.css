@@ -1,0 +1,207 @@
+/* Lagan Bandhan Matrimony Header Styles */
+
+/* Remove default list styles and spacing for navbar */
+.matrimony-navbar,
+.matrimony-navbar ul,
+.matrimony-navbar li,
+.matrimony-navbar a {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.matrimony-navbar {
+    background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 50%, #fef7ed 100%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(236, 72, 153, 0.1);
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.1);
+    min-height: auto !important;
+    height: auto !important;
+}
+
+/* Make navbar more compact */
+.matrimony-navbar .navbar-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.matrimony-navbar .nav-link {
+    margin: 0 !important;
+    padding: 6px 8px !important;
+    font-size: 0.875rem !important;
+}
+
+.brand-container {
+    position: relative;
+}
+
+.brand-container::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ec4899, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.brand-container:hover::before {
+    opacity: 0.1;
+}
+
+.brand-logo {
+    filter: drop-shadow(0 4px 8px rgba(236, 72, 153, 0.2));
+    transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+    filter: drop-shadow(0 6px 12px rgba(236, 72, 153, 0.3));
+}
+
+.brand-text {
+    background: linear-gradient(135deg, #ec4899, #be185d, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.user-avatar-container {
+    position: relative;
+}
+
+.user-avatar-container::after {
+    content: '💖';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.user-avatar-container:hover::after {
+    opacity: 1;
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ec4899, #f97316);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 100%;
+}
+
+.dropdown-item {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    transform: translateX(4px);
+}
+
+.mobile-menu-overlay {
+    background: rgba(236, 72, 153, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    .brand-text {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        padding: 12px 16px;
+        margin: 4px 0;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Pulse animation for active states */
+.pulse-pink {
+    animation: pulse-pink 2s infinite;
+}
+
+@keyframes pulse-pink {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(236, 72, 153, 0);
+    }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition: all 0.2s ease;
+}
+
+/* Custom scrollbar for dropdown */
+.dropdown-menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: #ec4899;
+    border-radius: 2px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #be185d;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Matrimony specific color scheme */
+:root {
+    --matrimony-primary: #ec4899;
+    --matrimony-secondary: #f97316;
+    --matrimony-accent: #eab308;
+    --matrimony-success: #22c55e;
+    --matrimony-info: #3b82f6;
+    --matrimony-purple: #8b5cf6;
+}

@@ -1,0 +1,122 @@
+{
+  "translation": {
+    "welocome": "Welcome to React and react-i18next",
+    "userDetails": {
+      "personalInfo": {
+        "title": "Personal Details",
+        "fields": {
+          "firstName": "First Name",
+          "middleName": "Middle Name",
+          "lastName": "Last Name",
+          "dateOfBirth": "Date Of Birth",
+          "timeOfBirth": "Time Of Birth",
+          "marriageStatus": "Marriage Status",
+          "gender": "Gender",
+          "bloodGroup": "Blood Group",
+          "caste": "Caste",
+          "subCaste": "Sub Caste",
+          "birthPlace": "Birth Place",
+          "religion": "Religion"
+        },
+        "errors": {
+          "required": "This field is required",
+          "typeError": "The value must be a number"
+        }
+      },
+      "basicInfo": {
+        "title": "Basic Details",
+        "fields": {
+          "education": "Education",
+          "occupation": "Occupation",
+          "income": "Income",
+          "height": "Height (in feet)",
+          "weight": "Weight (in kg)",
+          "skinColor": "Skin Color"
+        }
+      },
+      "familyInfo": {
+        "title": "Family Details",
+        "fields": {
+          "motherName": "Mother Full Name",
+          "motherMobileNo": "Mother Mobile Number",
+          "fatherName": "Father Full Name",
+          "fatherMobileNo": "Father Mobile Number",
+          "brotherName": "No Of Brothers",
+          "sisterName": "No Of Sisters"
+        }
+      },
+      "addressInfo": {
+        "title": "Address Information",
+        "fields": {
+          "address": "Address",
+          "tempAddress": "Temp Address",
+          "city": "City",
+          "pinCode": "PinCode",
+          "taluka": "Taluka",
+          "district": "District",
+          "state": "State"
+        }
+      },
+      "submit": "Submit"
+    },
+    "registerDetails": {
+      "register": {
+        "title": "Register",
+        "mobile": "Mobile No",
+        "email": "Email",
+        "password": "Password",
+        "charges": " We charges ₹501/year subscription fee"
+      },
+      "login": {
+        "title": "Login",
+        "mobile": " Mobile No",
+        "password": "Password",
+        "message": "Don't have an account?",
+        "signUp": "Register"
+      }
+    },
+    "photoDetails": {
+      "photoUpload": {
+        "photo": " Photo Upload",
+        "button": "Upload Image",
+        "text": "  SVG, PNG, JPG or GIF (Max 5 MB)",
+        "remove": "Remove Image"
+      },
+      "AadhaarUpload": {
+        "photo": " Aadhaar Upload",
+        "button": "Aadhaar Image",
+        "text": "  SVG, PNG, JPG or GIF (Max 1 MB)",
+        "remove": "Remove Image"
+      },
+      "submitButton": {
+        "submit": "Submit"
+      }
+    },
+    "ChangePassword": {
+      "title": "Change Password",
+      "password": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "updateButton": "Update Now"
+    },
+    "forgetPassword": {
+      "email": {
+        "heading": "Verify Email",
+        "title": " Enter Registered Email",
+        "send": "Send OTP"
+      },
+      "OTP": {
+        "heading": " Verify OTP",
+        "title": "Enter OTP",
+        "send": " Verify OTP"
+      }
+    },
+    "adminPanel": {
+      "login": {
+        "phoneNumber": "Mobile Number",
+        "password": "Password",
+        "login": "Login"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "translation": {
+    "welocome": "React आणि react-i18next मध्ये आपले स्वागत आहे",
+    "userDetails": {
+      "personalInfo": {
+        "title": "वैयक्तिक तपशील",
+        "fields": {
+          "firstName": "पहिले नाव",
+          "middleName": "मधले नाव",
+          "lastName": "आडनाव",
+          "dateOfBirth": "जन्मतारीख",
+          "timeOfBirth": "जन्मवेळ",
+          "marriageStatus": "वैवाहिक स्थिती",
+          "gender": "लिंग",
+          "bloodGroup": "रक्त गट",
+          "caste": "जात",
+          "subCaste": "उपजात",
+          "birthPlace": "जन्मस्थान",
+          "religion": "धर्म"
+        },
+        "errors": {
+          "required": "हे फील्ड आवश्यक आहे",
+          "typeError": "मूल्य संख्या असावी"
+        }
+      },
+      "basicInfo": {
+        "title": "मूलभूत तपशील",
+        "fields": {
+          "education": "शिक्षण",
+          "occupation": "व्यवसाय",
+          "income": "उत्पन्न",
+          "height": "उंची (फुटांमध्ये)",
+          "weight": "वजन (किलोमध्ये)",
+          "skinColor": "त्वचेचा रंग"
+        }
+      },
+      "familyInfo": {
+        "title": "कौटुंबिक तपशील",
+        "fields": {
+          "motherName": "आईचे संपूर्ण नाव",
+          "motherMobileNo": "आईचा मोबाईल नंबर",
+          "fatherName": "वडिलांचे संपूर्ण नाव",
+          "fatherMobileNo": "वडिलांचा मोबाईल नंबर",
+          "brotherName": "भावांची संख्या",
+          "sisterName": "बहिणींची संख्या"
+        }
+      },
+      "addressInfo": {
+        "title": "पत्त्याची माहिती",
+        "fields": {
+          "address": "पत्ता",
+          "tempAddress": "तात्पुरता पत्ता",
+          "city": "शहर",
+          "pinCode": "पिन कोड",
+          "taluka": "तालुका",
+          "district": "जिल्हा",
+          "state": "राज्य"
+        }
+      },
+      "submit": "प्रस्तुत करणे"
+    },
+    "registerDetails": {
+      "register": {
+        "title": "नोंदणी करा",
+        "mobile": "मोबाईल नंबर",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "charges": "आम्ही ₹1000/वर्ष सदस्यता शुल्क आकारतो"
+      },
+      "login": {
+        "title": "लॉगिन करा",
+        "mobile": "मोबाईल नंबर",
+        "password": "पासवर्ड",
+        "message": "खाते नाही?",
+        "signUp": "साइन अप करा"
+      }
+    },
+    "photoDetails": {
+      "photoUpload": {
+        "photo": "फोटो अपलोड",
+        "button": "प्रतिमा अपलोड करा",
+        "text": "SVG, PNG, JPG किंवा GIF (कमाल 5 MB)",
+        "remove": "प्रतिमा काढा"
+      },
+      "AadhaarUpload": {
+        "photo": "आधार अपलोड",
+        "button": "आधार प्रतिमा",
+        "text": "SVG, PNG, JPG किंवा GIF (कमाल 1 MB)",
+        "remove": "प्रतिमा काढा"
+      },
+      "submitButton": {
+        "submit": "प्रस्तुत करणे"
+      }
+    },
+    "ChangePassword": {
+      "title": "पासवर्ड बदला",
+      "password": "सध्याचा पासवर्ड",
+      "newPassword": "नवीन पासवर्ड",
+      "confirmPassword": "पासवर्ड पुष्टी करा",
+      "updateButton": "आता अपडेट करा"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "translation": {
+    "welocome": "रिएक्ट और रिएक्ट-i18next में आपका स्वागत है",
+    "userDetails": {
+      "personalInfo": {
+        "title": "व्यक्तिगत जानकारी",
+        "fields": {
+          "firstName": "पहला नाम",
+          "middleName": "मध्य नाम",
+          "lastName": "अंतिम नाम",
+          "dateOfBirth": "जन्म तिथि",
+          "timeOfBirth": "जन्म का समय",
+          "marriageStatus": "वैवाहिक स्थिति",
+          "gender": "लिंग",
+          "bloodGroup": "रक्त समूह",
+          "caste": "जाति",
+          "subCaste": "उप जाति",
+          "birthPlace": "जन्म स्थान",
+          "religion": "धर्म"
+        },
+        "errors": {
+          "required": "यह फ़ील्ड आवश्यक है",
+          "typeError": "मूल्य एक संख्या होनी चाहिए"
+        }
+      },
+      "basicInfo": {
+        "title": "मूल जानकारी",
+        "fields": {
+          "education": "शिक्षा",
+          "occupation": "पेशा",
+          "income": "आय",
+          "height": "ऊंचाई (फीट में)",
+          "weight": "वजन (किलोग्राम में)",
+          "skinColor": "त्वचा का रंग"
+        }
+      },
+      "familyInfo": {
+        "title": "परिवार की जानकारी",
+        "fields": {
+          "motherName": "माता का पूरा नाम",
+          "motherMobileNo": "माता का मोबाइल नंबर",
+          "fatherName": "पिता का पूरा नाम",
+          "fatherMobileNo": "पिता का मोबाइल नंबर",
+          "brotherName": "भाइयों की संख्या",
+          "sisterName": "बहनों की संख्या"
+        }
+      },
+      "addressInfo": {
+        "title": "पता जानकारी",
+        "fields": {
+          "address": "पता",
+          "tempAddress": "अस्थायी पता",
+          "city": "शहर",
+          "pinCode": "पिनकोड",
+          "taluka": "तालुका",
+          "district": "जिला",
+          "state": "राज्य"
+        }
+      },
+      "submit": "सबमिट करें"
+    },
+    "registerDetails": {
+      "register": {
+        "title": "रजिस्टर",
+        "mobile": "मोबाइल नंबर",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "charges": "हम ₹1000/वर्ष का सदस्यता शुल्क लेते हैं"
+      },
+      "login": {
+        "title": "लॉगइन करें",
+        "mobile": "मोबाइल नंबर/ईमेल",
+        "password": "पासवर्ड",
+        "message": "कोई खाता नहीं है?",
+        "signUp": "साइन अप करें"
+      }
+    },
+    "photoDetails": {
+      "photoUpload": {
+        "photo": "फोटो अपलोड",
+        "button": "छवि अपलोड करें",
+        "text": "SVG, PNG, JPG या GIF (अधिकतम 5 MB)",
+        "remove": "छवि हटाएं"
+      },
+      "AadhaarUpload": {
+        "photo": "आधार अपलोड",
+        "button": "आधार छवि",
+        "text": "SVG, PNG, JPG या GIF (अधिकतम 1 MB)",
+        "remove": "छवि हटाएं"
+      },
+      "submitButton": {
+        "submit": "सबमिट करें"
+      }
+    },
+    "ChangePassword": {
+      "title": "पासवर्ड बदलें",
+      "password": "वर्तमान पासवर्ड",
+      "newPassword": "नया पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "updateButton": "अभी अपडेट करें"
+    },
+    "forgetPassword": {
+      "email": {
+        "heading": "ईमेल सत्यापित करें",
+        "title": "पंजीकृत ईमेल दर्ज करें",
+        "send": "ओटीपी भेजें"
+      },
+      "OTP": {
+        "heading": "ओटीपी सत्यापित करें",
+        "title": "ओटीपी दर्ज करें",
+        "send": "ओटीपी सत्यापित करें"
+      }
+    },
+
+    "adminPanel": {
+      "login": {
+        "phoneNumber": "मोबाइल नंबर",
+        "password": "पासवर्ड",
+        "login": "लॉगिन"
+      }
+    }
+  }
+}

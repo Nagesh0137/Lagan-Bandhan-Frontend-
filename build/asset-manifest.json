@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a222454b.css",
+    "main.js": "/static/js/main.298016d6.js",
+    "static/js/453.ac7a7e1a.chunk.js": "/static/js/453.ac7a7e1a.chunk.js",
+    "static/media/logo2.png": "/static/media/logo2.8e4196c4fa7f3ad3a600.png",
+    "static/media/Euclid-Circular-A-Medium.ttf": "/static/media/Euclid-Circular-A-Medium.a5befbfcb71cd093cc56.ttf",
+    "static/media/Euclid-Circular-A-Regular.ttf": "/static/media/Euclid-Circular-A-Regular.d54600880dc63db716f2.ttf",
+    "static/media/Euclid-Circular-A-SemiBold.ttf": "/static/media/Euclid-Circular-A-SemiBold.ae11344face2a74d2042.ttf",
+    "static/media/Euclid-Circular-A-Bold.ttf": "/static/media/Euclid-Circular-A-Bold.b4788f2f8f64a74fe6d6.ttf",
+    "static/media/Onest-VariableFont_wght.ttf": "/static/media/Onest-VariableFont_wght.cad7eddd8c469b08d580.ttf",
+    "static/media/Lagan Bandhan.png": "/static/media/Lagan Bandhan.7fdb58d5145f60d1ddef.png",
+    "static/media/Not Found.png": "/static/media/Not Found.8fcc9fd5b40360af4593.png",
+    "static/media/pdf.png": "/static/media/pdf.5d16aadf0cb35adb6bed.png",
+    "index.html": "/index.html",
+    "main.a222454b.css.map": "/static/css/main.a222454b.css.map",
+    "main.298016d6.js.map": "/static/js/main.298016d6.js.map",
+    "453.ac7a7e1a.chunk.js.map": "/static/js/453.ac7a7e1a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a222454b.css",
+    "static/js/main.298016d6.js"
+  ]
+}
