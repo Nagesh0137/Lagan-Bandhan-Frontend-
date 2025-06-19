@@ -19,7 +19,8 @@ const initialValues = {
 const ChangePassword = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [showNewPassword, setShowNewPassword] = useState<boolean>(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState<boolean>(false);
   const [UpdatePassword, { isLoading }] = useChangePasswordMutation();
   const { values, errors, handleChange, handleBlur, handleSubmit, touched } =
     useFormik({
@@ -52,119 +53,176 @@ const ChangePassword = () => {
   return (
     <>
       <Header isUserFullyOnboarded />
-      <div className="  lg:flex"></div>
-      <div className=" flex flex-col justify-center w-full">
-        <div className="relative ">
-          <form onSubmit={handleSubmit}>
-            <div className="relative flex justify-center bg-white h-[550px] ">
-              <div className=" border border-red-100 rounded-3xl mt-12 px-10 py-10">
-                <div className="divide-x divide-gray-200 ">
-                  <div className="text-base leading-6 space-y-5 text-gray-700 ">
-                    <div>
-                      <h1 className="text-2xl font-semibold font-Onest justify-center flex mb-10 ">
-                        {t('ChangePassword.title')}
-                      </h1>
-                    </div>
-                    <div className="mt-5">
-                      <label
-                        htmlFor="Password"
-                        className="block text-sm font-medium leading-6 text-gray-900 font-Onest">
-                        {t('ChangePassword.password')}
-                      </label>
-                      <div className="mt-2">
-                        <input
-                          type="password"
-                          name="Password"
-                          id="Password"
-                          autoComplete="off"
-                          className="block  w-64 font-Onest sm:w-72 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                          value={values.Password}
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                        />
-                      </div>
-                      {errors.Password && touched.Password ? (
-                        <p className="text-red-500 font-Onest text-xs mt-1 flex ">
-                          {errors.Password}
-                        </p>
-                      ) : null}
-                    </div>
-
-                    <div className=" mt-5 ">
-                      <label
-                        htmlFor="Password"
-                        className="block text-sm font-medium leading-6 text-gray-900 font-Onest">
-                        {t('ChangePassword.newPassword')}
-                      </label>
-                      <div className="mt-2 flex ">
-                        <input
-                          type={showPassword ? 'text' : 'password'}
-                          name="ChangePassword"
-                          id="Password"
-                          autoComplete="off"
-                          className="block w-64 font-Onest sm:w-72 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                          value={values.ChangePassword}
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                        />
-                        <div className="relative top-2  h-6 pb-1 right-9  justify-center items-center flex rounded-sm flex-row  ">
-                          <FontAwesomeIcon
-                            className="text-gray-400"
-                            icon={showPassword ? faEyeSlash : faEye}
-                            onClick={() => setShowPassword(prev => !prev)}
-                          />
-                        </div>
-                      </div>
-                      {errors.ChangePassword && touched.ChangePassword ? (
-                        <p className="text-red-500 font-Onest text-xs mt-1 flex ">
-                          {errors.ChangePassword}
-                        </p>
-                      ) : null}
-                    </div>
-                    <div className=" mt-5">
-                      <label
-                        htmlFor="Password"
-                        className="block text-sm font-medium leading-6 text-gray-900 font-Onest">
-                        {t('ChangePassword.confirmPassword')}
-                      </label>
-                      <div className="mt-2 flex ">
-                        <input
-                          type={showPassword ? 'text' : 'password'}
-                          name="ConfirmPassword"
-                          id="Password"
-                          autoComplete="off"
-                          className="block w-64 font-Onest  sm:w-72 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                          value={values.ConfirmPassword}
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                        />
-                        <div className="relative top-2  h-6 pb-1 right-9  justify-center items-center flex rounded-sm flex-row gap-1 ">
-                          <FontAwesomeIcon
-                            className="text-gray-400"
-                            icon={showPassword ? faEyeSlash : faEye}
-                            onClick={() => setShowPassword(prev => !prev)}
-                          />
-                        </div>
-                      </div>
-                      {errors.ConfirmPassword && touched.ConfirmPassword ? (
-                        <p className="text-red-500 font-Onest text-xs mt-1 flex">
-                          {errors.ConfirmPassword}
-                        </p>
-                      ) : null}
-                    </div>
-
-                    <div className="relative pt-2">
-                      <button
-                        type="submit"
-                        className="bg-red-500 w-64 text-white sm:w-72 rounded-md  py-2 font-Onest font-bold flex content-center justify-center">
-                        {t('ChangePassword.updateButton')}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
+        <div className="flex justify-center items-center min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-md space-y-8">
+            <div className="text-center">
+              <h1 className="text-3xl font-bold text-gray-900 font-Onest mb-2">
+                {t('ChangePassword.title')}
+              </h1>
+              <p className="text-gray-600 font-Onest text-sm">
+                Secure your account with a new password
+              </p>
             </div>
-          </form>
+            
+            <div className="bg-white shadow-2xl rounded-2xl p-8 border border-gray-100">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Current Password */}
+                <div>
+                  <label
+                    htmlFor="currentPassword"
+                    className="block text-sm font-semibold text-gray-700 font-Onest mb-2">
+                    {t('ChangePassword.password')}
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="password"
+                      name="Password"
+                      id="currentPassword"
+                      autoComplete="current-password"
+                      placeholder="Enter current password"
+                      className="w-full px-4 py-3 font-Onest rounded-lg border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 hover:bg-white"
+                      value={values.Password}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                  </div>
+                  {errors.Password && touched.Password && (
+                    <p className="text-red-500 font-Onest text-xs mt-2 flex items-center">
+                      <span className="mr-1">⚠</span>
+                      {errors.Password}
+                    </p>
+                  )}
+                </div>
+
+                {/* New Password */}
+                <div>
+                  <label
+                    htmlFor="newPassword"
+                    className="block text-sm font-semibold text-gray-700 font-Onest mb-2">
+                    {t('ChangePassword.newPassword')}
+                  </label>
+                  <div className="relative">
+                    <input
+                      type={showNewPassword ? 'text' : 'password'}
+                      name="ChangePassword"
+                      id="newPassword"
+                      autoComplete="new-password"
+                      placeholder="Enter new password"
+                      className="w-full px-4 py-3 font-Onest rounded-lg border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 hover:bg-white pr-12"
+                      value={values.ChangePassword}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center hover:bg-gray-100 rounded-r-lg transition-colors duration-200"
+                      onClick={() => setShowNewPassword(prev => !prev)}>
+                      <FontAwesomeIcon
+                        className="h-4 w-4 text-gray-500 hover:text-gray-700"
+                        icon={showNewPassword ? faEyeSlash : faEye}
+                      />
+                    </button>
+                  </div>
+                  {errors.ChangePassword && touched.ChangePassword && (
+                    <p className="text-red-500 font-Onest text-xs mt-2 flex items-center">
+                      <span className="mr-1">⚠</span>
+                      {errors.ChangePassword}
+                    </p>
+                  )}
+                </div>
+
+                {/* Confirm Password */}
+                <div>
+                  <label
+                    htmlFor="confirmPassword"
+                    className="block text-sm font-semibold text-gray-700 font-Onest mb-2">
+                    {t('ChangePassword.confirmPassword')}
+                  </label>
+                  <div className="relative">
+                    <input
+                      type={showConfirmPassword ? 'text' : 'password'}
+                      name="ConfirmPassword"
+                      id="confirmPassword"
+                      autoComplete="new-password"
+                      placeholder="Confirm new password"
+                      className="w-full px-4 py-3 font-Onest rounded-lg border border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-200 hover:bg-white pr-12"
+                      value={values.ConfirmPassword}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center hover:bg-gray-100 rounded-r-lg transition-colors duration-200"
+                      onClick={() => setShowConfirmPassword(prev => !prev)}>
+                      <FontAwesomeIcon
+                        className="h-4 w-4 text-gray-500 hover:text-gray-700"
+                        icon={showConfirmPassword ? faEyeSlash : faEye}
+                      />
+                    </button>
+                  </div>
+                  {errors.ConfirmPassword && touched.ConfirmPassword && (
+                    <p className="text-red-500 font-Onest text-xs mt-2 flex items-center">
+                      <span className="mr-1">⚠</span>
+                      {errors.ConfirmPassword}
+                    </p>
+                  )}
+                </div>
+
+                {/* Password Requirements */}
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="text-sm font-semibold text-blue-800 font-Onest mb-2">
+                    Password Requirements:
+                  </h4>
+                  <ul className="text-xs text-blue-700 font-Onest space-y-1">
+                    <li className="flex items-center">
+                      <span className="mr-2">•</span>
+                      At least 8 characters long
+                    </li>
+                    <li className="flex items-center">
+                      <span className="mr-2">•</span>
+                      Include uppercase and lowercase letters
+                    </li>
+                    <li className="flex items-center">
+                      <span className="mr-2">•</span>
+                      Include at least one number
+                    </li>
+                    <li className="flex items-center">
+                      <span className="mr-2">•</span>
+                      Include at least one special character
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Submit Button */}
+                <div className="pt-4">
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-3 px-6 rounded-lg font-Onest transition-all duration-200 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none shadow-lg">
+                    {isLoading ? (
+                      <div className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Updating...
+                      </div>
+                    ) : (
+                      t('ChangePassword.updateButton')
+                    )}
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* Security Note */}
+            <div className="text-center">
+              <p className="text-xs text-gray-500 font-Onest">
+                🔒 Your password is encrypted and secure. We recommend using a strong, unique password.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

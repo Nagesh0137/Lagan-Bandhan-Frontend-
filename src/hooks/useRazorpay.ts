@@ -66,7 +66,7 @@ const useRazorpay = () => {
           currency: response.data.currency,
           amount: response.data.amount,
         });
-        openRazorpayModal(response.data.order_id, 100000, response?.data?.id);
+        openRazorpayModal(response.data.order_id, response.data.amount, response?.data?.id);
         setDisplayRazorpay(true);
       } else {
         showToast('Something went wrong', 'error');
@@ -87,15 +87,15 @@ const useRazorpay = () => {
       key: Razorpay.keyId, // key id from props
       amount, // Amount in lowest denomination from props
       currency: 'INR', // Currency from props.
-      name: 'Sakal Vishwa Vivah', // Title for your organization to display in checkout modal
+      name: 'Lagan Bandhan', // Title for your organization to display in checkout modal
       // image, // custom logo  url
       order_id: orderId, // order id from props
       // This handler menthod is always executed in case of succeeded payment
       prefill: {
         //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
-        name: 'Gaurav Kumar', //your customer's name
-        email: 'gaurav.kumar@example.com',
-        contact: '9000090000', //Provide the customer's phone number for better conversion rates
+        name: 'User', //your customer's name
+        email: 'user@example.com',
+        contact: '9000000000', //Provide the customer's phone number for better conversion rates
       },
       handler: (response: {
         razorpay_payment_id: null;

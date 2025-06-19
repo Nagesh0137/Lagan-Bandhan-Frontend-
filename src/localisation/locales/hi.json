@@ -1,6 +1,53 @@
 {
   "translation": {
     "welocome": "रिएक्ट और रिएक्ट-i18next में आपका स्वागत है",
+    "navigation": {
+      "home": "होम",
+      "matches": "मैच",
+      "favorites": "पसंदीदा",
+      "contact": "संपर्क",
+      "about": "हमारे बारे में",
+      "profile": "प्रोफ़ाइल",
+      "settings": "सेटिंग्स",
+      "logout": "लॉग आउट",
+      "changePassword": "पासवर्ड बदलें",
+      "updateProfile": "प्रोफ़ाइल अपडेट करें",
+      "updatePhoto": "फोटो अपडेट करें",
+      "deleteAccount": "खाता हटाएं"
+    },
+    "buttons": {
+      "save": "सेव करें",
+      "cancel": "रद्द करें",
+      "submit": "सबमिट करें",
+      "next": "अगला",
+      "previous": "पिछला",
+      "edit": "संपादित करें",
+      "delete": "हटाएं",
+      "confirm": "पुष्टि करें",
+      "close": "बंद करें"
+    },
+    "common": {
+      "loading": "लोड हो रहा है...",
+      "error": "त्रुटि",
+      "success": "सफलता",
+      "warning": "चेतावनी",
+      "info": "जानकारी"
+    },
+    "modal": {
+      "deleteAccount": {
+        "title": "अपना खाता हटाएं?",
+        "description": "आपका खाता हटाना स्थायी है और इसे पूर्ववत नहीं किया जा सकता। इससे आपके सभी डेटा, मैच, बातचीत और हमारी सेवाओं तक पहुंच का नुकसान होगा।",
+        "warningTitle": "⚠️ यह क्रिया स्थायी रूप से हटा देगी:",
+        "warningItems": [
+          "• आपकी प्रोफ़ाइल और फोटो",
+          "• सभी मैच और बातचीत",
+          "• खाता प्राथमिकताएं और सेटिंग्स"
+        ],
+        "confirmButton": "हां, खाता हटाएं",
+        "deletingButton": "हटा रहे हैं...",
+        "cancelButton": "रद्द करें"
+      }
+    },
     "userDetails": {
       "personalInfo": {
         "title": "व्यक्तिगत जानकारी",
@@ -117,6 +164,41 @@
         "phoneNumber": "मोबाइल नंबर",
         "password": "पासवर्ड",
         "login": "लॉगिन"
+      }
+    },
+    "homeScreen": {
+      "hero": {
+        "findYourPerfect": "अपना परफेक्ट",
+        "lifePartner": "जीवन साथी खोजें",
+        "description": "हजारों सत्यापित प्रोफाइल के साथ अर्थपूर्ण कनेक्शन खोजें। खुशी की आपकी यात्रा यहाँ शुरू होती है।",
+        "searchPlaceholder": "नाम, पेशे या स्थान से खोजें...",
+        "searchButton": "खोजें"
+      },
+      "filters": {
+        "activeFilters": "सक्रिय फिल्टर:",
+        "name": "नाम",
+        "age": "आयु",
+        "income": "आय"
+      },
+      "results": {
+        "discoverProfiles": "प्रोफाइल खोजें",
+        "matchingProfilesFound": "मिलते-जुलते प्रोफाइल मिले",
+        "browseVerifiedProfiles": "हमारे सत्यापित प्रोफाइल देखें",
+        "noMatchingProfiles": "कोई मेल खाती प्रोफाइल नहीं मिली",
+        "noMatchingDescription": "आपकी धर्म और जाति प्राथमिकताओं से मेल खाने वाली कोई प्रोफाइल नहीं मिली। अधिक मैच खोजने के लिए अपने खोज मानदंड या फिल्टर को समायोजित करने का प्रयास करें।",
+        "loadMoreProfiles": "और प्रोफाइल लोड करें"
+      },
+      "statistics": {
+        "trustedByThousands": "हजारों का भरोसा",
+        "growingCommunity": "सफल मैचों के हमारे बढ़ते समुदाय में शामिल हों",
+        "activeProfiles": "सक्रिय प्रोफाइल",
+        "successStories": "सफलता की कहानियां",
+        "verifiedProfiles": "सत्यापित प्रोफाइल",
+        "support": "सहायता"
+      },
+      "toast": {
+        "alreadyAddedFavorites": "पहले से ही पसंदीदा में जोड़ा गया",
+        "addedToFavorites": "पसंदीदा में जोड़ा गया"
       }
     }
   }

@@ -1,9 +1,33 @@
 import { Dropdown } from 'flowbite-react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function ChangeLanguage() {
   const { i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+  // Update current language when i18n language changes
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      setCurrentLanguage(lng);
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+    
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
+
+  const handleLanguageChange = async (languageCode: string) => {
+    try {
+      await i18n.changeLanguage(languageCode);
+      setCurrentLanguage(languageCode);
+    } catch (error) {
+      console.error('Failed to change language:', error);
+    }
+  };
+
   return (
     <div>
       <Dropdown
@@ -11,7 +35,7 @@ export default function ChangeLanguage() {
         inline
         label={
           <div className="font-Onest border border-gray-300 border-s px-4 py-2 rounded-2xl text-xs flex flex-row gap-2">
-            {i18n.language.toLocaleUpperCase()}
+            {currentLanguage.toUpperCase()}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,21 +53,21 @@ export default function ChangeLanguage() {
         }>
         <Dropdown.Item
           onClick={() => {
-            i18n.changeLanguage('en');
+            handleLanguageChange('en');
           }}
           className="font-Onest">
           English
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
-            i18n.changeLanguage('hi');
+            handleLanguageChange('hi');
           }}
           className="font-Onest">
           Hindi
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
-            i18n.changeLanguage('mr');
+            handleLanguageChange('mr');
           }}
           className="font-Onest">
           marathi

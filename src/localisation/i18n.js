@@ -7,14 +7,24 @@ import mrJson from "./locales/mr.json";
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: enJson,
-    hi: hiJson,
-    mr: mrJson,
+    en: {
+      translation: enJson.translation
+    },
+    hi: {
+      translation: hiJson.translation
+    },
+    mr: {
+      translation: mrJson.translation
+    }
   },
   lng: "en",
   fallbackLng: "en",
+  debug: process.env.NODE_ENV === 'development',
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    useSuspense: false,
   },
 });
 

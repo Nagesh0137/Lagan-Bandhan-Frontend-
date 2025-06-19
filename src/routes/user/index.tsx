@@ -15,13 +15,13 @@ import ContactScreen from '../../screens/ContactScreen';
 import AboutScreen from '../../screens/AboutScreen';
 import EmailVerificationScreen from '../../screens/EmailVerificationScreen';
 import OTPVerificationScreen from '../../screens/OTPVerificationScreen';
-import { PasswordVerificationSchema } from '../../utils/PasswordVerificationSchema';
 import PasswordChangeVerification from '../../screens/PasswordChangeVerification';
 import TermsConditionScreen from '../../screens/TermsConditionScreen';
 import PrivacyPolicyScreen from '../../screens/PrivacyPolicyScreen';
 import RefundAndReturnPolicy from '../../screens/RefundAndReturnPolicy';
 import FAQScreen from '../../screens/FAQScreen';
 import HelpCenterScreen from '../../screens/HelpCenterScreen';
+import TranslationTest from '../../components/TranslationTest';
 
 export const UserRoute = () => {
   return (
@@ -50,9 +50,9 @@ export const UserRoute = () => {
       </Route>
       <Route path="/terms" element={<TermsConditionScreen />} />
       <Route path="/privacy_policy" element={<PrivacyPolicyScreen />} />
-      <Route path="/refund_policy" element={<RefundAndReturnPolicy />} />
-      <Route path="/faq" element={<FAQScreen />} />
+      <Route path="/refund_policy" element={<RefundAndReturnPolicy />} />      <Route path="/faq" element={<FAQScreen />} />
       <Route path="/help" element={<HelpCenterScreen />} />
+      <Route path="/translation-test" element={<TranslationTest />} />
       <Route path="*" element={<h1>not found</h1>} />
     </Routes>
   );

@@ -125,7 +125,7 @@ const UserDetails = () => {
           .unwrap()
           .then(res => {
             if (res) {
-              console.log({ values });
+              // console.log({ values });
 
               navigate('/photoUpload', { replace: true });
             } else {

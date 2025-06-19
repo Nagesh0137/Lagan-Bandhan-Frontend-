@@ -8,13 +8,13 @@ export const calculateAge = (dob: any) => {
 
 export const suport = {
   mobile: '9637979931',
-  email: 'runanubandhvishwavivah@gmail.com',
+  email: 'laganbandhan@gmail.com',
 };
 
 export const Info = {
-  text: `Runanubandh Vishwavivah  📞 ${suport.mobile} / ✉️ ${suport.email}`,
+  text: `lagan bandhan 📞 ${suport.mobile} / ✉️ ${suport.email}`,
 };
 
 export const skipPayment = false;
-export const subscriptionAmount = 1;
+export const subscriptionAmount = 251;
 export const currency = 'INR';

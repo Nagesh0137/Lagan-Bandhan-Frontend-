@@ -77,14 +77,14 @@ function Header() {
               to="/admin/home"
               className="flex items-center group">
               <img
-                src={require('../../../assets/logo2.png')}
+                src={require('../../../assets/Lagan Bandhan.png')}
                 className="h-10 sm:h-12 transition-transform duration-200 group-hover:scale-105"
                 alt="Admin Portal"
               />
-              <div className="hidden sm:block ml-3">
+              {/* <div className="hidden sm:block ml-3">
                 <h1 className="text-xl font-bold text-gray-800 dark:text-white">Admin Portal</h1>
                 <p className="text-xs text-gray-500 dark:text-gray-400">Management Dashboard</p>
-              </div>
+              </div> */}
             </Link>
           </div>
 

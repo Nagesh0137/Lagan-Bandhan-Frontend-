@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-
 import { useFormik } from 'formik';
 import { registerSchema } from '../../utils/RegisterYup';
 import {
   useDoLoginMutation,
   useDoRegisterMutation,
-  useMakePaymentMutation,
+  useCheckEmailMutation,
 } from '../../redux/services/register/api';
 import Login from './Login';
 import { useTranslation } from 'react-i18next';
@@ -14,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { skipPayment } from '../../config/constant';
 import { useNavigate } from 'react-router-dom';
+import useRazorpay from '../../hooks/useRazorpay';
 
 const initialValues = {
   Mobile: '',
@@ -26,18 +26,47 @@ const Register = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [selectedTab, setSelectedTab] = useState<string>('Login');
-
-  const [doRegister, { isLoading: isRegisterLoading }] =
-    useDoRegisterMutation();
+  const [doRegister, { isLoading: isRegisterLoading }] = useDoRegisterMutation();
   const [doLogin] = useDoLoginMutation();
+  const [checkEmail] = useCheckEmailMutation();
 
-  const [makePayment, { isLoading: isPaymentLoading }] =
-    useMakePaymentMutation();
+  const { handleCreateOrder, loading: isPaymentLoading } = useRazorpay();
+  const [showPassword, setShowPassword] = useState<boolean>(false);
+  const handleRegisterSubmit = async (values: typeof initialValues) => {
+    setIsLoading(true);
+    
+    try {
+      // Check if user already exists by email
+      const emailCheck = await checkEmail({
+        email: values.Email
+      }).unwrap();
+
+      if (emailCheck.exists) {
+        // User already exists
+        showToast('Email already registered. Please try logging in.', 'error');
+        setSelectedTab('Login');
+        setIsLoading(false);
+        return;
+      }
+
+      // If user doesn't exist, proceed with registration
+      // The registration logic is handled by the formik onSubmit
+      
+    } catch (error) {
+      console.log('Email check failed, proceeding with registration');
+      // If email check fails, proceed with registration anyway
+    }
+    
+    setIsLoading(false);
+  };
+
   const { values, errors, handleChange, handleBlur, handleSubmit, touched } =
     useFormik({
       initialValues: initialValues,
       validationSchema: registerSchema,
       onSubmit: values => {
+        setIsLoading(true);
+        console.log('Registering with values:', values);
         doRegister({
           email: values?.Email,
           mobileNumber: values?.Mobile,
@@ -45,6 +74,7 @@ const Register = () => {
         })
           .unwrap()
           .then(res => {
+            console.log('Register Response:', res?.data);
             if (res?.data && res?.data?.token && res?.data?.id) {
               //make payment after registration
               if (skipPayment) {
@@ -56,31 +86,22 @@ const Register = () => {
                   .then(res => {
                     if (res?.success) {
                       localStorage.setItem('token', res?.data?.token ?? '');
+                      setIsLoading(false);
                       navigate('/home', { replace: true });
                     } else {
+                      setIsLoading(false);
                       showToast('Incorrect Mobile Number or Password', 'error');
                     }
                   })
                   .catch(() => {
+                    setIsLoading(false);
                     showToast('Something went wrong', 'error');
-                  });
-              } else {
-                let data = {
-                  number: values?.Mobile,
-                  MID: 'MID' + Date.now(),
-                  transactionId: 'T' + Date.now(),
-                  userId: res?.data?.id,
-                };
-
-                makePayment(data)
-                  .unwrap()
-                  .then(res => {
-                    if (res.success === true) {
-                      window.location.href =
-                        res.data.instrumentResponse.redirectInfo.url;
-                    }
-                  })
-                  .catch(error => showToast('Something went wrong', 'error'));
+                  });              } else {
+                // Use Razorpay for payment
+                setIsLoading(false);
+                handleCreateOrder(100, 'INR', res?.data?.id); // 100 rupees
+                showToast('Registration successful! Please complete payment and then login.', 'success');
+                setSelectedTab('Login');
               }
             } else {
               setIsLoading(false);
@@ -96,10 +117,9 @@ const Register = () => {
           });
       },
     });
-  const [showPassword, setShowPassword] = useState<boolean>(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-red-50">
+     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-red-50">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -107,14 +127,14 @@ const Register = () => {
             <div className="hidden lg:block">
               <div className="relative">
                 <img
-                  src="https://whitethread.s3.amazonaws.com/matrimony/profile/78efs.webp"
+                  src="/wedding.webp"
                   className="w-full h-[650px] object-cover rounded-2xl shadow-2xl"
                   alt="Happy Couple"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent rounded-2xl"></div>
                 <div className="absolute bottom-8 left-8 text-white">
-                  <h3 className="text-2xl font-bold font-Onest mb-2">Find Your Perfect Match</h3>
-                  <p className="text-white/90 font-Onest">Join thousands of happy couples who found love through Lagna Bandhan</p>
+                  <h3 className="text-4xl font-bold font-Onest mb-2">Find Your Perfect <span className=''>Match</span></h3>
+                  <p className="text-white/80 font-Onest">Join thousands of happy couples who found love through Lagna Bandhan</p>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Avatar, Button, Dropdown, Modal, Navbar } from 'flowbite-react';
 import ChangeLanguage from './common/ChangeLanguage/ChangeLanguage';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   useDeleteUserProfileMutation,
   userInfo,
@@ -18,6 +19,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [deleteProfile, { isLoading }] = useDeleteUserProfileMutation();
+  const { t } = useTranslation();
   const name = localStorage.getItem('name');
   const email = localStorage.getItem('email');
   const photo = localStorage.getItem('photo');
@@ -107,7 +109,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
           onClick={() => navigate('/home')}
           style={{ listStyle: 'none', margin: 0, padding: '6px 8px' }}
             >
-          Home
+          {t('navigation.home')}
             </Navbar.Link>
 
             <Navbar.Link
@@ -121,7 +123,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
           onClick={AboutUs}
           style={{ listStyle: 'none', margin: 0, padding: '6px 8px' }}
             >
-          About Us
+          {t('navigation.about')}
             </Navbar.Link>
 
             <Navbar.Link
@@ -135,11 +137,10 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
           onClick={() => navigate('/favorite')}
           style={{ listStyle: 'none', margin: 0, padding: '6px 8px' }}
             >
-          Favorites
+          {t('navigation.favorites')}
             </Navbar.Link>
 
-            <Navbar.Link
-          className={`
+            <Navbar.Link            className={`
             nav-link font-semibold transition-all duration-300 px-2 py-1.5 rounded-lg cursor-pointer text-center text-sm
             ${window.location.pathname.includes('/contact') 
               ? 'text-pink-600 bg-gradient-to-r from-pink-100 to-rose-100 border-b-2 border-pink-600 shadow-md' 
@@ -149,7 +150,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
           onClick={ContactUs}
           style={{ listStyle: 'none', margin: 0, padding: '6px 8px' }}
             >
-          Contact Us
+          {t('navigation.contact')}
             </Navbar.Link>
           </div>
         </div>
@@ -210,21 +211,21 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
               className="dropdown-item font-medium text-gray-700 hover:bg-gradient-to-r hover:from-pink-50 hover:to-rose-50 hover:text-pink-700 transition-all duration-200"
               onClick={changePassword}
             >
-              Change Password
+              {t('navigation.changePassword')}
             </Dropdown.Item>
             
             <Dropdown.Item 
               className="dropdown-item font-medium text-gray-700 hover:bg-gradient-to-r hover:from-pink-50 hover:to-rose-50 hover:text-pink-700 transition-all duration-200"
               onClick={UpdateProfile}
             >
-              Update Profile
+              {t('navigation.updateProfile')}
             </Dropdown.Item>
             
             <Dropdown.Item 
               className="dropdown-item font-medium text-gray-700 hover:bg-gradient-to-r hover:from-pink-50 hover:to-rose-50 hover:text-pink-700 transition-all duration-200"
               onClick={UpdatePhoto}
             >
-              Update Photo
+              {t('navigation.updatePhoto')}
             </Dropdown.Item>
           </div>
           
@@ -234,7 +235,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
             className="dropdown-item font-medium text-red-600 hover:bg-red-50 transition-all duration-200"
             onClick={openDeleteAccountModal}
           >
-            Delete Account
+            {t('navigation.deleteAccount')}
           </Dropdown.Item>
           
           <Dropdown.Divider className="border-gray-200" />
@@ -243,7 +244,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
             className="dropdown-item font-medium text-gray-700 hover:bg-gray-50 transition-all duration-200"
             onClick={handleLogout}
           >
-            Sign out
+            {t('navigation.logout')}
           </Dropdown.Item>
             </Dropdown>
 
@@ -312,7 +313,7 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
           onClick={ContactUs}
           style={{ listStyle: 'none', margin: 0, padding: '6px 8px' }}
             >
-          Contact Us
+          {t('navigation.contact')}
             </Navbar.Link>
           </div>
         </Navbar.Collapse>
@@ -335,22 +336,21 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
             </div>
             
             <h3 className="mb-4 text-xl font-bold text-gray-900">
-              Delete Your Account?
+              {t('modal.deleteAccount.title')}
             </h3>
             
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Deleting your account is permanent and cannot be undone. This will
-              result in the loss of all your data, matches, conversations, and access to our services.
+              {t('modal.deleteAccount.description')}
             </p>
             
             <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
               <p className="text-sm text-red-700 font-medium">
-                ⚠️ This action will permanently remove:
+                {t('modal.deleteAccount.warningTitle')}
               </p>
               <ul className="text-xs text-red-600 mt-2 space-y-1">
-                <li>• Your profile and photos</li>
-                <li>• All matches and conversations</li>
-                <li>• Account preferences and settings</li>
+                <li>{t('modal.deleteAccount.warningItems.0')}</li>
+                <li>{t('modal.deleteAccount.warningItems.1')}</li>
+                <li>{t('modal.deleteAccount.warningItems.2')}</li>
               </ul>
             </div>
             
@@ -360,14 +360,14 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
                 onClick={handleDeleteAccount}
                 disabled={isLoading}
               >
-                {isLoading ? "Deleting..." : "Yes, Delete Account"}
+                {isLoading ? t('modal.deleteAccount.deletingButton') : t('modal.deleteAccount.confirmButton')}
               </Button>
               <Button
                 color="gray"
                 className="font-semibold px-6 py-2 border-gray-300 hover:bg-gray-50 transition-all duration-200"
                 onClick={() => setOpenModal(false)}
               >
-                Cancel
+                {t('modal.deleteAccount.cancelButton')}
               </Button>
             </div>
           </div>

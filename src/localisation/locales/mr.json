@@ -1,6 +1,53 @@
 {
   "translation": {
     "welocome": "React आणि react-i18next मध्ये आपले स्वागत आहे",
+    "navigation": {
+      "home": "होम",
+      "matches": "जुळणी",
+      "favorites": "आवडते",
+      "contact": "संपर्क",
+      "about": "आमच्याबद्दल",
+      "profile": "प्रोफाइल",
+      "settings": "सेटिंग्ज",
+      "logout": "लॉग आउट",
+      "changePassword": "पासवर्ड बदला",
+      "updateProfile": "प्रोफाइल अपडेट करा",
+      "updatePhoto": "फोटो अपडेट करा",
+      "deleteAccount": "खाते हटवा"
+    },
+    "buttons": {
+      "save": "सेव्ह करा",
+      "cancel": "रद्द करा",
+      "submit": "सबमिट करा",
+      "next": "पुढे",
+      "previous": "मागे",
+      "edit": "संपादित करा",
+      "delete": "हटवा",
+      "confirm": "पुष्टी करा",
+      "close": "बंद करा"
+    },
+    "common": {
+      "loading": "लोड होत आहे...",
+      "error": "त्रुटी",
+      "success": "यश",
+      "warning": "चेतावणी",
+      "info": "माहिती"
+    },
+    "modal": {
+      "deleteAccount": {
+        "title": "तुमचे खाते हटवायचे?",
+        "description": "तुमचे खाते हटवणे कायमचे आहे आणि ते पूर्ववत केले जाऊ शकत नाही. यामुळे तुमचा सर्व डेटा, मॅच, संभाषणे आणि आमच्या सेवांचा प्रवेश गमावावा लागेल.",
+        "warningTitle": "⚠️ ही क्रिया कायमस्वरूपी काढून टाकेल:",
+        "warningItems": [
+          "• तुमची प्रोफाइल आणि फोटो",
+          "• सर्व मॅच आणि संभाषणे",
+          "• खाते प्राधान्ये आणि सेटिंग्ज"
+        ],
+        "confirmButton": "होय, खाते हटवा",
+        "deletingButton": "हटवत आहे...",
+        "cancelButton": "रद्द करा"
+      }
+    },
     "userDetails": {
       "personalInfo": {
         "title": "वैयक्तिक तपशील",
@@ -98,6 +145,48 @@
       "newPassword": "नवीन पासवर्ड",
       "confirmPassword": "पासवर्ड पुष्टी करा",
       "updateButton": "आता अपडेट करा"
+    },
+    "adminPanel": {
+      "login": {
+        "phoneNumber": "मोबाईल नंबर",
+        "password": "पासवर्ड",
+        "login": "लॉगिन"
+      }
+    },
+    "homeScreen": {
+      "hero": {
+        "findYourPerfect": "तुमचा परफेक्ट",
+        "lifePartner": "जीवनसाथी शोधा",
+        "description": "हजारो सत्यापित प्रोफाइलसह अर्थपूर्ण कनेक्शन शोधा। आनंदाची तुमची यात्रा इथे सुरू होते।",
+        "searchPlaceholder": "नाव, व्यवसाय किंवा स्थानानुसार शोधा...",
+        "searchButton": "शोधा"
+      },
+      "filters": {
+        "activeFilters": "सक्रिय फिल्टर:",
+        "name": "नाव",
+        "age": "वय",
+        "income": "उत्पन्न"
+      },
+      "results": {
+        "discoverProfiles": "प्रोफाइल शोधा",
+        "matchingProfilesFound": "जुळणारे प्रोफाइल सापडले",
+        "browseVerifiedProfiles": "आमचे सत्यापित प्रोफाइल पहा",
+        "noMatchingProfiles": "कोणतेही जुळणारे प्रोफाइल सापडले नाहीत",
+        "noMatchingDescription": "तुमच्या धर्म आणि जात प्राधान्यांशी जुळणारे कोणतेही प्रोफाइल सापडले नाहीत। अधिक मॅच शोधण्यासाठी तुमचे शोध निकष किंवा फिल्टर समायोजित करण्याचा प्रयत्न करा।",
+        "loadMoreProfiles": "अधिक प्रोफाइल लोड करा"
+      },
+      "statistics": {
+        "trustedByThousands": "हजारांचा विश्वास",
+        "growingCommunity": "यशस्वी मॅचच्या आमच्या वाढत्या समुदायात सामील व्हा",
+        "activeProfiles": "सक्रिय प्रोफाइल",
+        "successStories": "यशाच्या कथा",
+        "verifiedProfiles": "सत्यापित प्रोफाइल",
+        "support": "समर्थन"
+      },
+      "toast": {
+        "alreadyAddedFavorites": "आधीपासूनच आवडीत जोडले आहे",
+        "addedToFavorites": "आवडीत जोडले"
+      }
     }
   }
 }

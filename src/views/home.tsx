@@ -34,11 +34,11 @@ const Home: React.FC<HomeProps> = () => {
           <div className="flex-1 w-full flex items-center flex-col relative z-10">
             {/* Header */}
             <header className="w-full flex relative items-center py-4 sm:py-8 px-4 sm:px-8 lg:px-20 justify-between">
-              <img alt="logo" src="/logo2.png" className="h-12 sm:h-16 lg:h-20 transition-all duration-300" />
+              <img alt="logo" src="/Lagan Bandhan.png" style={{backgroundColor:'white', borderRadius:'8px', objectFit:'contain'}} className="h-12 sm:h-16 lg:h-20 transition-all duration-300 img-thumbnail" />
               <div className="hidden md:flex items-center space-x-6">
-                <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">About</button>
-                <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">Features</button>
-                <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">Contact</button>
+              {/* <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">About</button> */}
+              {/* <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">Features</button> */}
+              {/* <button className="text-white/80 hover:text-white transition-colors duration-300 font-medium">Contact</button> */}
               </div>
             </header>
 

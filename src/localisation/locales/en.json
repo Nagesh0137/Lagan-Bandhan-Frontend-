@@ -1,6 +1,52 @@
 {
   "translation": {
     "welocome": "Welcome to React and react-i18next",
+    "navigation": {
+      "home": "Home",
+      "matches": "Matches",
+      "favorites": "Favorites",
+      "contact": "Contact",
+      "about": "About",
+      "profile": "Profile",
+      "settings": "Settings",
+      "logout": "Logout",
+      "changePassword": "Change Password",
+      "updateProfile": "Update Profile",
+      "updatePhoto": "Update Photo",
+      "deleteAccount": "Delete Account"
+    },
+    "buttons": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "next": "Next",
+      "previous": "Previous",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirm": "Confirm",
+      "close": "Close"
+    },    "common": {
+      "loading": "Loading...",
+      "error": "Error",
+      "success": "Success",
+      "warning": "Warning",
+      "info": "Information"
+    },
+    "modal": {
+      "deleteAccount": {
+        "title": "Delete Your Account?",
+        "description": "Deleting your account is permanent and cannot be undone. This will result in the loss of all your data, matches, conversations, and access to our services.",
+        "warningTitle": "⚠️ This action will permanently remove:",
+        "warningItems": [
+          "• Your profile and photos",
+          "• All matches and conversations", 
+          "• Account preferences and settings"
+        ],
+        "confirmButton": "Yes, Delete Account",
+        "deletingButton": "Deleting...",
+        "cancelButton": "Cancel"
+      }
+    },
     "userDetails": {
       "personalInfo": {
         "title": "Personal Details",
@@ -65,7 +111,7 @@
         "mobile": "Mobile No",
         "email": "Email",
         "password": "Password",
-        "charges": " We charges ₹501/year subscription fee"
+        "charges": " We charges ₹251/year subscription fee"
       },
       "login": {
         "title": "Login",
@@ -110,12 +156,46 @@
         "title": "Enter OTP",
         "send": " Verify OTP"
       }
-    },
-    "adminPanel": {
+    },    "adminPanel": {
       "login": {
         "phoneNumber": "Mobile Number",
         "password": "Password",
         "login": "Login"
+      }
+    },
+    "homeScreen": {
+      "hero": {
+        "findYourPerfect": "Find Your Perfect",
+        "lifePartner": "Life Partner",
+        "description": "Discover meaningful connections with thousands of verified profiles. Your journey to happiness starts here.",
+        "searchPlaceholder": "Search by name, profession, or location...",
+        "searchButton": "Search"
+      },
+      "filters": {
+        "activeFilters": "Active filters:",
+        "name": "Name",
+        "age": "Age",
+        "income": "Income"
+      },
+      "results": {
+        "discoverProfiles": "Discover Profiles",
+        "matchingProfilesFound": "matching profiles found",
+        "browseVerifiedProfiles": "Browse through our verified profiles",
+        "noMatchingProfiles": "No matching profiles found",
+        "noMatchingDescription": "No profiles found that match your religion and caste preferences. Try adjusting your search criteria or filters to find more matches.",
+        "loadMoreProfiles": "Load More Profiles"
+      },
+      "statistics": {
+        "trustedByThousands": "Trusted by Thousands",
+        "growingCommunity": "Join our growing community of successful matches",
+        "activeProfiles": "Active Profiles",
+        "successStories": "Success Stories",
+        "verifiedProfiles": "Verified Profiles",
+        "support": "Support"
+      },
+      "toast": {
+        "alreadyAddedFavorites": "Already added in favorites",
+        "addedToFavorites": "Added to Favorites"
       }
     }
   }
