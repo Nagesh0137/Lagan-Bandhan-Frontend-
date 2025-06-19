@@ -74,6 +74,44 @@ const Login = ({ onSignupClick }: LoginProps) => {
           return;
         }
 
+        // Check if user exists by mobile number
+        try {
+          const userRes = await fetch(baseUrl + '/user/getByMobile', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ mobileNumber }),
+          });
+          const userData = await userRes.json();
+          
+          // Check if user was found (success: 1 means user exists)
+          if (userData?.success !== 1) {
+            showToast('User not found. Please register first.', 'error');
+            return;
+          }
+          
+          // User exists, check payment status
+          const user = userData.data;
+          const paymentInfo = user.paymentInfo;
+          const isPaymentDone = paymentInfo && (paymentInfo.status === 'succeeded' || paymentInfo.code === 'PAYMENT_SUCCESS' || paymentInfo.paymentDetails?.status === 'captured');
+          
+          if (!isPaymentDone) {
+            // Redirect to payment page with user details
+            navigate('/payment', { 
+              state: { 
+                userId: user._id,
+                mobileNumber, 
+                message: 'Your account exists but payment is pending. Please complete the payment to continue.' 
+              } 
+            });
+            return;
+          }
+        } catch (err) {
+          console.error('Error checking user:', err);
+          showToast('Error connecting to server. Please try again.', 'error');
+          return;
+        }
+
+        // If payment is done, proceed with login
         try {
           const res = await doLogin({ 
             mobileNumber: mobileNumber, 

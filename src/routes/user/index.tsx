@@ -22,6 +22,7 @@ import RefundAndReturnPolicy from '../../screens/RefundAndReturnPolicy';
 import FAQScreen from '../../screens/FAQScreen';
 import HelpCenterScreen from '../../screens/HelpCenterScreen';
 import TranslationTest from '../../components/TranslationTest';
+import PaymentScreen from '../../screens/PaymentScreen';
 
 export const UserRoute = () => {
   return (
@@ -29,6 +30,7 @@ export const UserRoute = () => {
       <Route path="/auth" element={<Register />} />
       <Route path="/" element={<Home />} />
       <Route path="/validate" element={<ValidateScreen />} />
+      <Route path="/payment" element={<PaymentScreen />} />
       <Route path="/emailVerification" element={<EmailVerificationScreen />} />
       <Route path="/OTPVerification" element={<OTPVerificationScreen />} />
       <Route
