@@ -19,7 +19,7 @@ const FAQScreen = () => {
     {
       id: 1,
       category: 'Account & Registration',
-      question: 'How do I create an account on Lagan Bandhan?',
+      question: 'How do I create an account on Jeevan Sobati?',
       answer: 'Creating an account is simple! Click on the "Register" button, provide your basic information like name, email, mobile number, and create a password. You will receive an OTP for verification, and once verified, you can complete your profile with additional details.'
     },
     {
@@ -149,7 +149,7 @@ const FAQScreen = () => {
     {
       id: 21,
       category: 'General',
-      question: 'What makes Lagan Bandhan different from other matrimony sites?',
+      question: 'What makes Jeevan Sobati different from other matrimony sites?',
       answer: 'We focus on authentic profiles, advanced AI-powered matching, personalized support, strict verification processes, and a user-friendly experience. Our success rate of over 85% in successful marriages speaks for our commitment to helping you find your perfect life partner.'
     },
     {
@@ -215,7 +215,7 @@ const FAQScreen = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-Onest">
-            Find answers to the most commonly asked questions about Lagan Bandhan. 
+            Find answers to the most commonly asked questions about Jeevan Sobati. 
             If you can't find what you're looking for, feel free to contact our support team.
           </p>
         </div>
@@ -310,7 +310,7 @@ const FAQScreen = () => {
                   Contact Support
                 </a>
                 <a
-                  href="mailto:support@laganbandhan.com"
+                  href="mailto:support@jeevansobati.com"
                   className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-pink-600 transition-all duration-300 transform hover:scale-105 font-Onest"
                 >
                   Email Us

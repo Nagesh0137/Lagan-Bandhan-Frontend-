@@ -1,8 +1,8 @@
-# Lagan Bandhan Matrimony - Enhanced Navbar
+# Jeevan Sobati Matrimony - Enhanced Navbar
 
 ## Overview
 
-This is a professional, modern, and fully responsive navbar designed specifically for the Lagan Bandhan matrimony website. The navbar features a beautiful gradient design, smooth animations, and matrimony-themed styling.
+This is a professional, modern, and fully responsive navbar designed specifically for the Jeevan Sobati matrimony website. The navbar features a beautiful gradient design, smooth animations, and matrimony-themed styling.
 
 ## ✨ Key Features
 
@@ -180,4 +180,4 @@ The navbar automatically adapts based on:
 - Cultural sensitivity in design choices
 - Inclusive design for all users
 
-This enhanced navbar represents a significant upgrade to the Lagan Bandhan matrimony platform, providing users with a professional, beautiful, and highly functional navigation experience that reflects the serious nature of matrimonial services while maintaining an approachable and warm aesthetic.
+This enhanced navbar represents a significant upgrade to the Jeevan Sobati matrimony platform, providing users with a professional, beautiful, and highly functional navigation experience that reflects the serious nature of matrimonial services while maintaining an approachable and warm aesthetic.

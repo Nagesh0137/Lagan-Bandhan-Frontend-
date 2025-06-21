@@ -14,18 +14,18 @@ function AboutScreen() {
             <div className="lg:w-1/2 mb-10 lg:mb-0">
               <h1 className="text-4xl lg:text-6xl font-bold font-Onest mb-6 leading-tight">
                 Welcome to
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-pink-500 to-purple-600 block"> Lagan Bandhan</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-pink-500 to-purple-600 block"> Jeevan Sobati</span>
               </h1>
               <p className="text-gray-700 text-lg font-Onest mb-8 leading-relaxed">
                 India's most trusted matrimonial platform where sacred bonds are formed. We bring together hearts and families to create beautiful relationships that last a lifetime.
               </p>
               <div className="grid grid-cols-2 gap-4 max-w-md">
                 <div className="bg-white rounded-xl px-4 py-3 shadow-lg border border-rose-100">
-                  <span className="text-2xl font-bold text-rose-600 block">5M+</span>
+                  <span className="text-2xl font-bold text-rose-600 block">1k+</span>
                   <p className="text-sm text-gray-600">Happy Marriages</p>
                 </div>
                 <div className="bg-white rounded-xl px-4 py-3 shadow-lg border border-purple-100">
-                  <span className="text-2xl font-bold text-purple-600 block">25M+</span>
+                  <span className="text-2xl font-bold text-purple-600 block">25k+</span>
                   <p className="text-sm text-gray-600">Trusted Profiles</p>
                 </div>
               </div>
@@ -38,7 +38,7 @@ function AboutScreen() {
                   alt="Indian Wedding Couple"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl p-4 text-white shadow-lg">
-                  <p className="font-bold text-sm">✨ Since 2010</p>
+                  <p className="font-bold text-sm">✨ Since 2025</p>
                   <p className="text-xs opacity-90">Trusted by Millions</p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ function AboutScreen() {
             </div>
             <div className="lg:w-1/2">
               <h2 className="text-3xl lg:text-5xl font-bold font-Onest mb-8">
-                Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">Lagan Bandhan?</span>
+                Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">Jeevan Sobati?</span>
               </h2>
               
               <div className="space-y-8">

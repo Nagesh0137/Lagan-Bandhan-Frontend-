@@ -86,9 +86,9 @@ const Header = ({ isUserFullyOnboarded = false, ...props }: propState) => {
         <div className="flex items-center space-x-2">
           <div className="relative">
             <img
-          src={require('../assets/Lagan Bandhan.png')}
+          src={require('../assets/Jeevan Sobati.png')}
           className="brand-logo h-8 sm:h-10 lg:h-12 w-auto transition-all duration-300"
-          alt="Lagan Bandhan - Where Hearts Unite"
+          alt="Jeevan Sobati - Where Hearts Unite"
             />
           </div>
         </div>

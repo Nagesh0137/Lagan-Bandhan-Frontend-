@@ -47,7 +47,7 @@ const ContactScreen = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-6 font-Onest">
-              Connect with Lagan Bandhan
+              Connect with Jeevan Sobati
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-Onest">
               Your journey to finding the perfect life partner starts here. We're here to help you every step of the way.

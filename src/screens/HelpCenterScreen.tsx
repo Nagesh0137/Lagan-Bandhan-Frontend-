@@ -25,7 +25,7 @@ const HelpCenterScreen = () => {
     {
       icon: <HiBookOpen className="w-8 h-8" />,
       title: 'Getting Started',
-      description: 'Learn the basics of using Lagan Bandhan',
+      description: 'Learn the basics of using Jeevan Sobati',
       articles: [
         'How to create your first profile',
         'Setting up your preferences',
@@ -122,7 +122,7 @@ const HelpCenterScreen = () => {
       icon: <HiMail className="w-6 h-6" />,
       title: 'Email Support',
       description: 'Send us your queries',
-      link: 'mailto:support@laganbandhan.com',
+      link: 'mailto:support@jeevansobati.com',
       color: 'bg-pink-500'
     }
   ];
@@ -183,7 +183,7 @@ const HelpCenterScreen = () => {
             Help Center
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 font-Onest">
-            Find answers, get support, and learn how to make the most of your Lagan Bandhan experience
+            Find answers, get support, and learn how to make the most of your Jeevan Sobati experience
           </p>
           
           {/* Search Bar */}

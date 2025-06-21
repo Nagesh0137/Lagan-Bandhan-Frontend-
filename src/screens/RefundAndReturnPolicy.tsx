@@ -20,7 +20,7 @@ const RefundAndReturnPolicy = () => {
             Refund and Return Policy
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-Onest">
-            Understanding our refund policy helps ensure transparency in all your transactions with Lagan Bandhan. 
+            Understanding our refund policy helps ensure transparency in all your transactions with Jeevan Sobati. 
             Please read this policy carefully before making any payments.
           </p>
         </div>
@@ -39,7 +39,7 @@ const RefundAndReturnPolicy = () => {
           </div>
           <div className="p-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 text-center font-Onest">
-              All payments made to <strong>Lagan Bandhan</strong> for premium membership plans or any other services are 
+              All payments made to <strong>Jeevan Sobati</strong> for premium membership plans or any other services are 
               <strong className="text-red-600 dark:text-red-400"> final and non-refundable</strong>. We do not offer refunds, exchanges, 
               or returns for any payments or services.
             </p>
@@ -54,7 +54,7 @@ const RefundAndReturnPolicy = () => {
           {/* Introduction */}
           <section>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-Onest mb-6">
-              At <strong>Lagan Bandhan</strong>, we strive to provide the best possible matrimonial services to help you find your life partner. Please read this policy carefully as it outlines the terms regarding refunds and returns.
+              At <strong>Jeevan Sobati</strong>, we strive to provide the best possible matrimonial services to help you find your life partner. Please read this policy carefully as it outlines the terms regarding refunds and returns.
             </p>
           </section>
 
@@ -262,10 +262,10 @@ const RefundAndReturnPolicy = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="mailto:billing@laganbandhan.com"
+                href="mailto:billing@jeevansobati.com"
                 className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 font-Onest"
               >
-                📧 billing@laganbandhan.com
+                📧 billing@jeevansobati.com
               </a>
               <a
                 href="/contact"

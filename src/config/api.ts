@@ -1,4 +1,4 @@
-export const baseUrl = 'http://localhost:8085';
+export const baseUrl = 'https://lagnbandhan.cloudjiffy.net';
 
 export const Razorpay = {
   keyId: 'rzp_live_RVVSDnjM9ShqQ3',

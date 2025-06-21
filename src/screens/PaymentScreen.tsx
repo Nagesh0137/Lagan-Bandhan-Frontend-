@@ -66,7 +66,7 @@ const PaymentScreen = () => {
               </div>
             </div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-Onest">
-              Complete Your Payment
+              Complete Your Payment.
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-Onest">
               Unlock premium matrimony features with a one-time payment

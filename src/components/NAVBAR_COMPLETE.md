@@ -1,4 +1,4 @@
-# 🎉 Lagan Bandhan Matrimony - Professional Navbar Complete!
+# 🎉 Jeevan Sobati Matrimony - Professional Navbar Complete!
 
 ## ✨ What's Been Enhanced
 
@@ -98,7 +98,7 @@
 
 ## 🌟 **Ready for Production**
 
-Your Lagan Bandhan matrimony website now has a **professional, beautiful, and fully responsive navbar** that:
+Your Jeevan Sobati matrimony website now has a **professional, beautiful, and fully responsive navbar** that:
 
 - ✅ Looks professional and trustworthy for matrimony services
 - ✅ Works perfectly on all devices (mobile, tablet, desktop)

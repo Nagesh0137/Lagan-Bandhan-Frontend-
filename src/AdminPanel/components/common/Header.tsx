@@ -77,7 +77,7 @@ function Header() {
               to="/admin/home"
               className="flex items-center group">
               <img
-                src={require('../../../assets/Lagan Bandhan.png')}
+                src={require('../../../assets/Jeevan Sobati.png')}
                 className="h-10 sm:h-12 transition-transform duration-200 group-hover:scale-105"
                 alt="Admin Portal"
               />

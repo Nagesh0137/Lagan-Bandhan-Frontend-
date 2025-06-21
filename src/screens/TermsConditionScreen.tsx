@@ -21,7 +21,7 @@ const TermsConditionScreen = () => {
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-Onest">
             Please read these terms carefully before using our matrimony platform. 
-            By using Lagan Bandhan, you agree to be bound by these terms and conditions.
+            By using Jeevan Sobati, you agree to be bound by these terms and conditions.
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ const TermsConditionScreen = () => {
                 Important Notice
               </h3>
               <p className="text-blue-800 dark:text-blue-200 font-Onest">
-                Welcome to <strong>Lagan Bandhan</strong>, a premier matrimony platform maintained by 
+                Welcome to <strong>Jeevan Sobati</strong>, a premier matrimony platform maintained by 
                 <strong> A2Z IT HUB</strong>. By using our platform, you agree to comply with and be bound 
                 by the following terms and conditions. If you do not agree to these terms, please do not use this platform.
               </p>
@@ -58,7 +58,7 @@ const TermsConditionScreen = () => {
                 </h2>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-Onest">
-                By accessing and using <strong>Lagan Bandhan</strong> (the "Platform"), you accept and agree to be bound by these Terms and Conditions (the "Agreement"). This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Platform and avail its services.
+                By accessing and using <strong>Jeevan Sobati</strong> (the "Platform"), you accept and agree to be bound by these Terms and Conditions (the "Agreement"). This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Platform and avail its services.
               </p>
             </section>
 
@@ -160,7 +160,7 @@ const TermsConditionScreen = () => {
               <ul className="text-gray-600 dark:text-gray-300 space-y-3 font-Onest">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <strong>Lagan Bandhan</strong> reserves the right to terminate or suspend your account without notice if you violate these Terms and Conditions or engage in inappropriate behavior.
+                  <strong>Jeevan Sobati</strong> reserves the right to terminate or suspend your account without notice if you violate these Terms and Conditions or engage in inappropriate behavior.
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -200,8 +200,8 @@ const TermsConditionScreen = () => {
               </h3>
               <p className="text-gray-600 dark:text-gray-300 font-Onest">
                 For any questions regarding these Terms and Conditions, please contact us at{' '}
-                <a href="mailto:support@laganbandhan.com" className="text-pink-600 dark:text-pink-400 hover:underline">
-                  support@laganbandhan.com
+                <a href="mailto:support@jeevansobati.com" className="text-pink-600 dark:text-pink-400 hover:underline">
+                  support@jeevansobati.com
                 </a>
               </p>
             </section>

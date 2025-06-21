@@ -87,7 +87,7 @@ const useRazorpay = () => {
       key: Razorpay.keyId, // key id from props
       amount, // Amount in lowest denomination from props
       currency: 'INR', // Currency from props.
-      name: 'Lagan Bandhan', // Title for your organization to display in checkout modal
+      name: 'Jeevan Sobati', // Title for your organization to display in checkout modal
       // image, // custom logo  url
       order_id: orderId, // order id from props
       // This handler menthod is always executed in case of succeeded payment

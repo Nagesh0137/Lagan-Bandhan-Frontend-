@@ -23,13 +23,13 @@ function Footer() {
             <div className="space-y-4">
               <Link to="/" className="flex items-center space-x-3">
                 <img
-                  src={require('../../assets/Lagan Bandhan.png')}
+                  src={require('../../assets/Jeevan Sobati.png')}
                   className="h-16 w-auto"
-                  alt="Lagan Bandhan Logo"
+                  alt="Jeevan Sobati Logo"
                 />
               </Link>
               <h3 className="text-xl font-bold text-pink-600 dark:text-pink-400 font-Onest">
-                Lagan Bandhan
+                Jeevan Sobati
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed font-Onest">
                 Your trusted partner in finding the perfect life companion. We connect hearts and create beautiful relationships for a lifetime of happiness.
@@ -213,7 +213,7 @@ function Footer() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
-                  <span className="text-sm font-Onest">support@laganbandhan.com</span>
+                  <span className="text-sm font-Onest">support@jeevansobati.com</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
                   <svg className="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
@@ -232,7 +232,7 @@ function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-center md:text-left">
                 <p className="text-gray-600 dark:text-gray-300 text-sm font-Onest">
-                  © 2025 <span className="font-semibold text-pink-600 dark:text-pink-400">Lagan Bandhan</span>. All Rights Reserved.
+                  © 2025 <span className="font-semibold text-pink-600 dark:text-pink-400">Jeevan Sobati</span>. All Rights Reserved.
                 </p>
               </div>
               <div className="text-center md:text-right">

@@ -77,7 +77,7 @@ const PrivacyPolicyScreen = () => {
           {/* Introduction */}
           <section>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-Onest mb-6">
-              Welcome to <strong>Lagan Bandhan</strong>! We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our platform.
+              Welcome to <strong>Jeevan Sobati</strong>! We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our platform.
             </p>
           </section>
 
@@ -263,8 +263,8 @@ const PrivacyPolicyScreen = () => {
             </h3>
             <p className="text-gray-600 dark:text-gray-300 font-Onest">
               If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at{' '}
-              <a href="mailto:privacy@laganbandhan.com" className="text-green-600 dark:text-green-400 hover:underline">
-                privacy@laganbandhan.com
+              <a href="mailto:privacy@jeevansobati.com" className="text-green-600 dark:text-green-400 hover:underline">
+                privacy@jeevansobati.com
               </a>
             </p>
           </section>
