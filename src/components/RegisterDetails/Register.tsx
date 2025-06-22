@@ -130,7 +130,7 @@ const Register = () => {
                 <div className="mb-8">
                   <h1 className="text-4xl font-bold mb-3 font-Onest">
                     Welcome to <br />
-                    <span className="text-red-100">Lagna Bandhan</span>
+                    <span className="text-red-100">Jeevan Sobati</span>
                   </h1>
                   <p className="text-red-100 text-lg leading-relaxed">
                     Find your perfect life partner from thousands of verified profiles
@@ -166,7 +166,7 @@ const Register = () => {
 
                 <div className="mt-8 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
                   <p className="text-sm text-red-100 italic">
-                    "Found my perfect match through Lagna Bandhan. Highly recommended!"
+                    "Found my perfect match through Jeevan Sobati. Highly recommended!"
                   </p>
                   <p className="text-xs text-red-200 mt-2">- Happy Couple</p>
                 </div>
