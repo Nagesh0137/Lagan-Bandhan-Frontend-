@@ -173,7 +173,7 @@ const Login = ({ onSignupClick }: LoginProps) => {
                   </svg>
                 </div>
                 <h1 className="text-2xl font-bold text-white font-Onest">
-                  Lagna Bandhan
+                  Jeevan Sobati
                 </h1>
               </div>
               <p className="text-red-100 text-sm font-Onest">
